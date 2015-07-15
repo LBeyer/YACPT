@@ -124,7 +124,7 @@ __device__ inline Ray diffuseReflection(const Vec3& intersectionPoint, const Vec
 	Vec3 dir = {cosf(phi) * sinTheta, sinf(phi) * sinTheta, cosTheta};
 	dir.normalize();
 
-	// change of basis towards surfacenormal/tangent/bitangent 
+	// change of basis towards surfacenormal / tangent / bitangent 
 	Vec3 dx0 = {0, surfaceNormal.z, -surfaceNormal.y};
 	Vec3 dx1 = {-surfaceNormal.z, 0, surfaceNormal.x};
 	auto dx = ((dx0.dot(dx0)) > (dx1.dot(dx1)) ? dx0 : dx1).normalize();
