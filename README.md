@@ -4,7 +4,7 @@ YACPT (Yet Another Cuda Path Tracer) is a raytracer demonstrating the usage of m
 the rendering equation resulting in global illumination. Some preprocessing is done on the CPU, the raytracing itself
 happens on CUDA-enabled GPUs.
 
-Currently supported features:
+currently supported features:
 - QT for a (very) minimal GUI
 - trianglemeshes and spheres
 - a sceneparser (work in progress, currently pretty unstable)
